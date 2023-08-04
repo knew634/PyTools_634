@@ -9,8 +9,8 @@ def get_pip_version():
 
 
 # 换源安装库
-def install_lib(lib_name, source="https://pypi.douban.com/simple"):
-    os.system("pip install -i " + source + " " + "--trusted-host pypi.douban.com " + lib_name)
+def install_lib(lib_name, source="https://pypi.douban.com/simple", tursted="--trusted-host pypi.douban.com"):
+    os.system(f"pip install -i {source} {tursted} {lib_name}")
 
 
 # 列出所有库并且装进列表
